@@ -40,3 +40,4 @@ console.log("smallest number is ",smallest);
 arr.forEach((val)=>{
   console.log(val);
 })
+
