@@ -2,7 +2,7 @@
 
 :root{
   --accent-color:#8672FF;
-  --base-color:white;
+  --base-color:rgb(190, 221, 241);
   --text-color:#2E2B41;
   --input-color:#F3F0FF;
 }
@@ -13,4 +13,89 @@
 }
 html{
   font-family:Poppins;
+  font-size: 12pt;
+  color: var(--text-color);
+  text-align: center;
+}
+
+body{
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper{
+  box-sizing: border-box;
+background-color: var(--base-color);
+height: 100vh;
+width: max(40%,600px);
+padding: 10px;
+border-radius: 0 20px 20px 0;
+justify-content: center;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+form{
+  width: min(400px,100%);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form input{
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1em;
+  border-radius: 10px;
+  border:2px solid var(--input-color);
+  background-color: var(--input-color);
+}
+
+form input:hover{
+  border: 2px solid var(--accent-color);
+}
+
+form input:focus{
+  outline: none;
+  border-color: var(--text-color);
+}
+
+form button{
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  font:inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 150ms ease;
+}
+
+form button:hover{
+  background-color: var(--text-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+form div .incorrect input{
+  border-color: red;
 }
