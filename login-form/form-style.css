@@ -96,6 +96,6 @@ a:hover{
   text-decoration: underline;
 }
 
-form div .incorrect input{
-  border-color: red;
+.incorrect{
+  border: 2px solid red;
 }
